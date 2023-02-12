@@ -1,0 +1,10 @@
+name: "mlops_bm"
+dependencies:
+  - pandas
+  - scikit-learn
+  - numpy
+  - fastapi
+  - black
+  - ruff
+  - pip:
+    - -e .
