@@ -1,3 +1,4 @@
 pre-commit:
 	black . && \
-	ruff --fix --ignore=E501 src/
+	ruff --fix src/ && \
+	mypy --ignore-missing-imports src/
