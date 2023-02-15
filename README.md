@@ -4,5 +4,5 @@
 | --- | --- | --- |
 | python function | joblib/sklearn | 21.363 |
 | python function | onnx | 0.292 |
-| fastapi | joblib/sklearn | 33.507 |
-| fastapi | onnx | 13.335 |
+| fastapi (uvicorn) | joblib/sklearn | 32.777 |
+| fastapi (uvicorn) | onnx | 10.267 |

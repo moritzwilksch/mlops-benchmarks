@@ -6,3 +6,11 @@
 2023-02-13 10:52:37.288 | INFO     | __main__:<module>:70 - pyfun_joblib took 21.3629 seconds.
 2023-02-13 10:54:34.850 | INFO     | __main__:<module>:78 - restapi_onnx took 13.2382 seconds.
 2023-02-13 10:54:52.844 | INFO     | __main__:<module>:78 - restapi_onnx took 13.3347 seconds.
+2023-02-15 08:19:16.571 | INFO     | __main__:<module>:79 - restapi_onnx took 12.3207 seconds.
+2023-02-15 08:19:39.681 | INFO     | __main__:<module>:79 - restapi_onnx took 12.6740 seconds.
+2023-02-15 08:20:45.808 | INFO     | __main__:<module>:79 - restapi_onnx took 10.7918 seconds.
+2023-02-15 08:22:32.741 | INFO     | __main__:<module>:79 - restapi_onnx took 10.2672 seconds.
+2023-02-15 08:25:25.058 | INFO     | __main__:<module>:79 - restapi_joblib took 105.8957 seconds.
+2023-02-15 08:26:14.975 | INFO     | __main__:<module>:79 - restapi_joblib took 32.7769 seconds.
+2023-02-15 08:29:58.601 | INFO     | __main__:<module>:79 - restapi_onnx took 10.3320 seconds.
+2023-02-15 08:30:40.415 | INFO     | __main__:<module>:79 - restapi_onnx took 10.5663 seconds.

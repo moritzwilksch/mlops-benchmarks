@@ -5,7 +5,7 @@ from pydantic import BaseModel
 app = FastAPI()
 
 # run with:
-# uvicorn --app-dir src/restapi api:app
+# uvicorn --log-level warning --app-dir src/restapi api:app
 
 
 class InputData(BaseModel):
@@ -18,10 +18,10 @@ class InputData(BaseModel):
 
 
 @app.post("/predict-joblib")
-def predict_joblib(d: InputData) -> dict:
+async def predict_joblib(d: InputData) -> dict:
     return {"result": pyfun_joblib(d.__dict__).item()}
 
 
 @app.post("/predict-onnx")
-def predict_onnx(d: InputData) -> dict:
+async def predict_onnx(d: InputData) -> dict:
     return {"result": pyfun_onnx(d.__dict__).item()}
