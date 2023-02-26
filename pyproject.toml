@@ -3,5 +3,8 @@ name = "mlops_benchmarks"
 version = "0.1.0"
 
 [tool.ruff]
-ignore = ["D100", "D103", "T201", "PD901", "D211", "D101"]
+ignore = ["D100", "D103", "T201", "PD901", "D211", "D101", "INP", "ANN", "G004", "PTH", "TCH"]
 select = ["ALL"]
+
+[tool.mypy]
+ignore_missing_imports = true

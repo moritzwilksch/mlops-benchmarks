@@ -2,7 +2,7 @@
 
 import json
 import time
-from typing import Callable
+from collections.abc import Callable
 
 import joblib
 import numpy as np
@@ -24,7 +24,10 @@ data_point = {
     "size": 2,
 }
 
-onnx_sess = rt.InferenceSession("artifacts/model.onnx")
+so = rt.SessionOptions()
+so.graph_optimization_level = rt.GraphOptimizationLevel.ORT_ENABLE_ALL
+
+onnx_sess = rt.InferenceSession("artifacts/model.onnx", sess_options=so)
 input_names = [ii.name for ii in onnx_sess.get_inputs()]
 label_name = onnx_sess.get_outputs()[0].name
 

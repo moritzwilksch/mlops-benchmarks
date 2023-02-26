@@ -13,5 +13,6 @@ dependencies:
   - fastapi
   - uvicorn
   - requests
+  - aiohttp
   - pip:
     - -e .
